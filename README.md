@@ -23,8 +23,8 @@ Once the deployment is complete, you will have a free SQL Database that you can 
 
     1. Copy and paste this command in VSC terminal  npm install --save-dev cypress-sql-server - Cypress sql server gets installed and we can see it as one of the dev dependency added in package.json file i.e.., "cypress-sql-server": "^1.0.0"
     2. How to make this plugin activate in cypress ? we need to register the plugin in cypress.config.js file in setup node method  Add these 2 lines of code in the setup node method   
-* tasks = sqlServer.loadDBPlugin(config.db);
-*   on('task', tasks);
+ tasks = sqlServer.loadDBPlugin(config.db);
+    on('task', tasks);
 
     - Add this package  in the same cypress.config.js file
  const sqlServer = require('cypress-sql-server');
