@@ -65,4 +65,6 @@ describe('example to-do app', () => {
         })
     }
 Output: it displays the 0th row, 1st column data present in database in Persons table
+
+
 **Note: we need to create data in database prior doing the above step**
