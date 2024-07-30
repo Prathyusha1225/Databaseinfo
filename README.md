@@ -43,3 +43,14 @@ Once the deployment is complete, you will have a free SQL Database that you can 
  4. We need to load custom commands  add these 2 lines of code in e2e.js file in support folder  this code can retrieve the data from the database   import sqlServer from 'cypress-sql-server';
      sqlServer.loadDBCommands();
 
+5. create a testcase and retrive the data from database 
+example: 
+describe('example to-do app', () => {
+    it('displays two todo items by default', () => {
+
+        cy.sqlServer("SELECT * FROM Persons").then(function(result)) 
+            console.log(result[0][1])
+        })
+    }
+Output: it displays the 0th row, 1st column data present in database in Persons table
+**Note: we need to create data in database prior doing the above step**
