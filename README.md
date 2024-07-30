@@ -17,9 +17,9 @@ Once the deployment is complete, you will have a free SQL Database that you can 
 
 5. Create a table and insert values into
 Steps: 
-1. open the database that you have created in Azure by using the credentials user name and password that you have created while creating the server 
-2. click on the query editor from the left pane 
-3. Enter the create SQL query and click on run , likewise do the insert query and add the values in it.
+-  open the database that you have created in Azure by using the credentials user name and password that you have created while creating the server 
+-  click on the query editor from the left pane 
+-  Enter the create SQL query and click on run , likewise do the insert query and add the values in it.
 
 
 
